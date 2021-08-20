@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+	<title>Dad jokes!</title>
+</head>
+<body>
+	<h1 id="title">Dad Jokes</h1>
+	<main>
+		<nav>
+			<ul>
+				<div>
+					<button id="save">Save to clipboard</button>
+				</div>
+				<div>
+					<button id="newJoke">New joke</button>
+				</div>
+				<div>
+					<a href="https://icanhazdadjoke.com/" target="_blank"><button>Source</button></a>
+				</div>
+				
+				
+			</ul>
+		</nav>
+		<section>
+			<div>
+				<h1 id="curJoke">Click the button to fetch a joke!</h1>
+				<h3 class="hidden" id="history">History:</h3>
+			</div>
+			<ul id="jokes"></ul>
+		</section>
+
+	</main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+<script src="index.js" defer></script>
+</html>

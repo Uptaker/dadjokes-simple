@@ -1,0 +1,100 @@
+html {
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(19, 19, 19);
+    font-size: 16;
+}
+main {
+    max-width: 960px;
+    min-height: 800px;
+    margin: 10px auto;
+    border: 1px dashed lightgray;
+    background-color: white;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px dashed lightgray;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 0;
+    width: 100%;
+}
+li {
+    list-style-type: none;
+    padding: 0.5rem 0;
+}
+button {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    border-radius: 0;
+    border: 1px solid lightgray;
+    transition: all 0.2s;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+    cursor: pointer;
+    outline: none;
+    background: rgb(245, 245, 245);
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+button a {
+    width: 100%;
+}
+nav ul div {
+    margin: 1rem;
+
+}
+section {
+    padding: 0 1rem;
+}
+#curJoke {
+    padding: 1rem 0;
+}
+
+nav ul div button:hover, nav ul div button:hover:focus {
+    background-color: rgb(78, 78, 78);
+    color: white;
+}
+#title {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+.hidden {
+    display: none;
+}
+#jokes {
+    padding: 0;
+}
+#jokes li {
+    background-color: rgb(245, 245, 245);
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border: 1px dashed lightgray;
+    font-size: 1.1rem;
+}
+#jokes li:nth-last-of-type(2n) {
+    background-color: white;
+    border: 1px dashed lightgray;
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        margin: 10px 0;
+    }
+    body {
+        margin: 0;
+        width: 100%;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
